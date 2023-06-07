@@ -1,4 +1,6 @@
-# Docker container images with "headless" VNC session
+## Docker container images with "headless" VNC session
+
+Forked + branched + reset to this commit [repo](https://github.com/ConSol/docker-headless-vnc-container/tree/628bc41badc90ce060df8254cc02b590df03cd9b), plus some repairs to broken tiger-vnc dependencies. 
 
 ** This project is no longer maintained **
 
