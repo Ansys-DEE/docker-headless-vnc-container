@@ -1,0 +1,15 @@
+# This Dockerfile is used to build an headles vnc image based on Centos
+# Adapted from https://github.com/trashpanda001/docker-centos-sshd
+
+FROM jrbe228/xfce-vnc-centos:1.0
+
+RUN \
+  yum -y install openssh-clients openssh-server && \
+  yum -y clean all && \
+  touch /run/utmp && \
+  chmod u+s /usr/bin/ping && \
+  echo "root:root" | chpasswd
+
+#Eventually use supervisord instead - https://stackoverflow.com/questions/18805073/docker-multiple-entrypoints
+ENTRYPOINT ["/bin/sh", "-c" , "/dockerstartup/sshd_startup.sh && /dockerstartup/vnc_startup.sh"]
+#ENTRYPOINT ["/dockerstartup/sshd_startup.sh", "/dockerstartup/vnc_startup.sh"]

@@ -1,0 +1,1 @@
+docker build -f Dockerfile.centos.xfce.ssh -t jrbe228/xfce-vnc-centos:ssh .
