@@ -1,8 +1,8 @@
 ## Docker container images with "headless" VNC session
 
-Forked + branched + reset to this commit [repo](https://github.com/ConSol/docker-headless-vnc-container/tree/628bc41badc90ce060df8254cc02b590df03cd9b), plus some repairs to broken tiger-vnc dependencies. 
-New Dockerfile added with SSH support - Dockerfile.centos.xfce.ssh. 
-Images published [here](https://hub.docker.com/repository/docker/jrbe228/xfce-vnc-centos/general) currently. 
+Forked + branched + reset to this [commit](https://github.com/ConSol/docker-headless-vnc-container/tree/628bc41badc90ce060df8254cc02b590df03cd9b), plus some repairs to broken tiger-vnc dependencies.  
+New Dockerfile added with SSH support - Dockerfile.centos.xfce.ssh.  
+Images published on [Dockerhub](https://hub.docker.com/repository/docker/jrbe228/xfce-vnc-centos/general) currently.  
 
 ** This project is no longer maintained **
 
